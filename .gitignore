@@ -1,0 +1,11 @@
+# Everything here is a cloned repo or local state, except the workspace files.
+/*
+!/.gitignore
+!/AGENTS.md
+!/Makefile
+!/README.md
+
+# Editor and OS noise
+.idea/
+.vscode/
+.DS_Store
