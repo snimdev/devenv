@@ -15,10 +15,10 @@ Rules for anyone, person or AI agent, developing Snim in this workspace.
 ## Development goes through specs
 
 1. Every feature and behaviour change starts as a spec in `specs/`, following `specs/README.md`. The only exceptions are bug fixes that restore specified behaviour and chores with no user-visible change.
-2. Publish the spec with `make roadmap DRY=1`, then `make roadmap`. That creates its snim.dev roadmap entry and its issue.
-3. Implement against the spec, in the product repo, referencing the issue.
+2. Open a pull request for the spec. Merging it publishes its snim.dev roadmap entry and, for planned and in-progress work, its issue on `snimdev/snim`.
+3. Implement against the spec, in the product repo, referencing the issue as `#N`. Never use a closing keyword such as `Closes #N`: the spec's status closes the issue.
 4. When the code has to differ from the spec, update the spec first, then the code.
-5. Keep the spec's Status checklist and `status` current, and publish after each change. Shipping closes the issue.
+5. Keep the spec's Status checklist and `status` current through pull requests. Merging `shipped` closes the issue.
 
 ## Code quality
 

@@ -21,7 +21,7 @@ Any private repositories are cloned too when you have access.
 
 ## Spec-driven development
 
-Every feature starts as a spec in `specs/`. Publishing it (`make roadmap`) creates its entry on the [snim.dev roadmap](https://snim.dev/roadmap) and its issue on the app repository, both generated from the same file. The code follows the spec, the spec is updated before the code when the design changes, and shipping it closes the issue. See [`AGENTS.md`](AGENTS.md) for the rules and [`specs/README.md`](https://github.com/snimdev/specs#readme) for the format.
+Every feature starts as a spec in `specs/`. Merging it publishes its entry on the [snim.dev roadmap](https://snim.dev/roadmap) and its issue on the app repository, both generated from the same file within seconds. The code follows the spec, the spec is updated before the code when the design changes, and shipping it closes the issue. See [`AGENTS.md`](AGENTS.md) for the rules and [`specs/README.md`](https://github.com/snimdev/specs#readme) for the format.
 
 ```mermaid
 flowchart LR
