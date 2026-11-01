@@ -36,6 +36,7 @@ status:
 		fi; \
 	done
 
-# Publishes each spec to the snim.dev roadmap and its issue (DRY=1 shows the diff only).
+# Re-runs the website's specs sync, which normally runs on every push to specs (DRY=1 previews it).
 roadmap:
-	@python3 specs/roadmap.py $(if $(DRY),--dry-run,)
+	@test -n "$(SNIM_ARTISAN)" || { echo "Set SNIM_ARTISAN in local.mk"; exit 1; }
+	@$(SNIM_ARTISAN) specs:sync $(if $(DRY),--dry-run,)
