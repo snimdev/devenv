@@ -8,7 +8,7 @@ Rules for anyone, person or AI agent, developing Snim in this workspace.
 
 - `specs/`: feature specs, where all development starts ([snimdev/specs](https://github.com/snimdev/specs)).
 - `snim/`: the desktop app, C++20 and Qt 6 ([snimdev/snim](https://github.com/snimdev/snim)). Build steps are in its README and `CMakeLists.txt`.
-- `homebrew-tap/`: the macOS cask. Bump `version` and `sha256` from the release's `sha256sums.txt` after every release.
+- `homebrew-tap/`: the macOS cask. The release workflow bumps its `version` and `sha256` as `snim-bot` after every stable release.
 - `setup-msvc/`: the GitHub Action that sets up MSVC for the Windows builds.
 - Any private repositories: cloned only with access, and they keep their own rules.
 
